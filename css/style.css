@@ -406,6 +406,9 @@ body.lock {
 .list {
   padding-top: 30px;
 }
+.list a {
+  color: #E4E4E4;
+}
 
 .conten-main {
   margin-top: 1096px;
