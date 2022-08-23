@@ -34,6 +34,7 @@ body.lock{
     overflow: hidden;
 }
 
+/* Шапка сайта */
 .header {
 
     .container{
@@ -352,9 +353,9 @@ body.lock{
     }
 }
 
+/* Основная часть сайта */
 .conten-main {
     margin-top: 1096px;
-    border: $border1;
     color: $color1;
 
     &__about-us {
@@ -441,3 +442,103 @@ body.lock{
 }
 .container {
 }
+
+.content-bottom {
+
+    &__merch {
+    }
+
+    &__merch-title {
+        margin-top: 206px;
+        font-size: 64px;
+        font-weight: 500;
+        color: #fff;
+        text-align: center;
+    }
+
+    &__merch-text {
+        margin-top: 22px;
+        text-align: center;
+        font-size: 24px;
+        font-weight: 300;
+        color: #e4e4e4;
+
+        p{
+            padding-bottom: 22px;
+        }
+    }
+
+    &__adress {
+    }
+
+    &__adress-content {
+        display: flex;
+    }
+
+    &__adress-title {
+        padding-top: 118px;
+        padding-bottom: 66px;
+        font-size: 64px;
+        font-weight: 500;
+        color: #fff;
+        text-align: center;
+    }
+
+    &__adress-image {
+    }
+
+    &__adress-text {
+        color: $color1;
+        font-size: 24px;
+        font-weight: 300;
+        margin-top: 60px;
+        margin-left: 96px;
+        line-height: 29px;
+
+        span{
+            color: $color3;
+        }
+
+        p + p{
+            margin-top: 50px;
+        }
+
+        p:nth-child(1){
+            line-height: 29px;
+            width: 295px;
+            height: 58px;
+        }
+
+        p:nth-child(2){
+            font-weight: 500;
+        }
+    }
+
+    &__btn {
+        display: block;
+        width: 72px;
+        height: 72px;
+        border: 2px solid $color3;
+        border-radius: 50%;
+        background: transparent;
+        margin-top: 80px;
+        text-align: center;
+        margin-left: 1348px;
+        transition: 0.3s;
+
+        img{
+            padding-top: 29px;
+            transition: 0.3s;
+        }
+
+        &:hover{
+            img{
+                padding-top: 0;
+                transition: 0.3s;
+            }
+        }
+    }
+}
+.container {
+}
+
