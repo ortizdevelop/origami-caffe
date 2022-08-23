@@ -16,7 +16,7 @@ body{
     font-family: 'Montserrat';
     margin: 0 auto;
     padding: 0 20px;
-    height: 3547px;
+    // height: 3547px;
     width: 1440px;
     left: 1516px;
     top: -585px;
@@ -26,7 +26,7 @@ body{
 
 html, body {
     width: 1440px;
-    height: 3547px;
+    // height: 3547px;
     background-color: #141414;
 }
 
@@ -543,26 +543,80 @@ body.lock{
 }
 
 .footer {
+    margin-top: 24px;
+
 
     &__menu {
+        color: $color1;
+        display: flex;
+        text-align: center;
+        justify-content: space-around;
+        border-top: 1px solid $color3;
+        padding-bottom: 50px;
     }
 
     &__logo {
+        padding-top: 20px;
     }
 
     &__copyright {
+        padding-top: 40px;
+        font-size: 16px;
+        line-height: 20px;
+        color: #c4c4c4;
     }
 
     &__copyright-cafe {
     }
 
     &__copyright-ortiz {
+        margin-top: 20px;
+        
+    }
+
+    &__copyright-ortiz-img{
+        width: 72px;
+        height: 72px;
+        margin-top: 30px;
+        margin-bottom: 20px;
     }
 
     &__copyright-ortiz-link {
+        color: $color1;
+        border: 3px solid $color3;
+        padding: 10px;
+        border-radius: 4px;
+
+        span{
+            font-size: 20px;
+        }
+
+        &:hover{
+            background: $color3;
+            transition: 0.3s;
+
+            span{
+                color: $color2;
+                transition: 0.3s;
+            }
+        }
+
+        &:active{
+            background: transparent;
+            transition: 0.3s;
+
+            span{
+                color: $color3;
+                transition: 0.3s;
+            }
+        }
     }
 
     &__number {
+        padding-top: 40px;
+        font-size: 16px;
+        font-weight: 300;
+        color: #fff;
     }
 }
 .container {

@@ -76,7 +76,6 @@ body {
   font-family: "Montserrat";
   margin: 0 auto;
   padding: 0 20px;
-  height: 3547px;
   width: 1440px;
   left: 1516px;
   top: -585px;
@@ -85,7 +84,6 @@ body {
 
 html, body {
   width: 1440px;
-  height: 3547px;
   background-color: #141414;
 }
 
@@ -551,4 +549,65 @@ body.lock {
 .content-bottom__btn:hover img {
   padding-top: 0;
   transition: 0.3s;
+}
+
+.footer {
+  margin-top: 24px;
+}
+.footer__menu {
+  color: #E4E4E4;
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+  border-top: 1px solid #FF9466;
+  padding-bottom: 50px;
+}
+.footer__logo {
+  padding-top: 20px;
+}
+.footer__copyright {
+  padding-top: 40px;
+  font-size: 16px;
+  line-height: 20px;
+  color: #c4c4c4;
+}
+.footer__copyright-ortiz {
+  margin-top: 20px;
+}
+.footer__copyright-ortiz-img {
+  width: 72px;
+  height: 72px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.footer__copyright-ortiz-link {
+  color: #E4E4E4;
+  border: 3px solid #FF9466;
+  padding: 10px;
+  border-radius: 4px;
+}
+.footer__copyright-ortiz-link span {
+  font-size: 20px;
+}
+.footer__copyright-ortiz-link:hover {
+  background: #FF9466;
+  transition: 0.3s;
+}
+.footer__copyright-ortiz-link:hover span {
+  color: #1D1E25;
+  transition: 0.3s;
+}
+.footer__copyright-ortiz-link:active {
+  background: transparent;
+  transition: 0.3s;
+}
+.footer__copyright-ortiz-link:active span {
+  color: #FF9466;
+  transition: 0.3s;
+}
+.footer__number {
+  padding-top: 40px;
+  font-size: 16px;
+  font-weight: 300;
+  color: #fff;
 }
