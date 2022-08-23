@@ -406,3 +406,70 @@ body.lock {
 .list {
   padding-top: 30px;
 }
+
+.conten-main {
+  margin-top: 1096px;
+  border: 1px solid red;
+  color: #E4E4E4;
+}
+.conten-main__about-us-title {
+  font-size: 64px;
+  font-weight: 500;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 87px;
+}
+.conten-main__about-us-content {
+  display: flex;
+}
+.conten-main__about-us-subtitle {
+  height: 220px;
+  width: 592px;
+  left: 112px;
+  top: 1268px;
+  border-radius: nullpx;
+  font-size: 16px;
+  font-weight: 300;
+  margin-right: 46px;
+  margin-left: 90px;
+  padding-top: 60px;
+}
+.conten-main__about-us-subtitle p + p {
+  margin-top: 32px;
+}
+.conten-main__about-us-subtitle span {
+  color: #FF9466;
+}
+.conten-main__menu-title {
+  font-size: 64px;
+  font-weight: 500;
+  color: #fff;
+  text-align: center;
+  margin-top: 318px;
+  margin-bottom: 78px;
+}
+.conten-main__menu-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+.conten-main__menu-list p {
+  padding-top: 12px;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 500;
+  color: #e4e4e4;
+}
+.conten-main__menu-list p:hover {
+  color: #FF9466;
+  transition: 0.3s;
+}
+.conten-main__menu-list img {
+  padding-top: 20px;
+  text-align: center;
+  border-radius: 50%;
+}
+.conten-main__menu-list img:hover {
+  background: #FF9466;
+  transition: 0.3s;
+}
