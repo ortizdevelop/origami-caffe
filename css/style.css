@@ -72,3 +72,29 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*--------------------*/
+body {
+  font-family: "Montserrat";
+  margin: 0 auto;
+  padding: 0 20px;
+  height: 3547px;
+  width: 1440px;
+  left: 1516px;
+  top: -585px;
+  border-radius: 0px;
+}
+
+.header .container {
+  background-image: url("/assets/header/bg.png");
+  position: absolute;
+  width: 1440px;
+  height: 952px;
+  left: 0px;
+  top: 0px;
+  color: #E4E4E4;
+}
+.header__menu {
+  padding-top: 82px;
+}
+.header__title {
+  padding-top: 160px;
+}

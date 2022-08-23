@@ -1,4 +1,73 @@
 @import "nullstyle.scss"; //! Обнуляющий стиль!
 
-$color_1: #ffcc00;
-$color_2: #676d77;  //! Мои основные цвета для сайта
+$color1: #E4E4E4;
+$color2: #1D1E25;
+$color3: #FF9466;
+$color4: #345F59;
+$color5: #141414;
+
+body{
+    font-family: 'Montserrat';
+    margin: 0 auto;
+    padding: 0 20px;
+    height: 3547px;
+    width: 1440px;
+    left: 1516px;
+    top: -585px;
+    border-radius: 0px;    
+}
+
+.header {
+
+    .container{
+        background-image: url('/assets/header/bg.png');
+        position: absolute;
+        width: 1440px;
+        height: 952px;
+        left: 0px;
+        top: 0px;
+        color: $color1;
+    }
+
+    &__menu {
+        padding-top: 82px;
+    }
+
+    &__logo {
+    }
+
+    &__link {
+    }
+
+    &__hamburger {
+    }
+
+    &__title {
+        padding-top: 160px;
+    }
+
+    &__subtitle {
+    }
+
+    &__btn {
+    }
+
+    &__btn-link {
+    }
+
+    &__quality {
+    }
+
+    &__quality-list {
+    }
+
+    &__quality-img {
+    }
+
+    &__quality-text {
+    }
+}
+.container {
+}
+.list {
+}
