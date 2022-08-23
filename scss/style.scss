@@ -106,13 +106,20 @@ body.lock{
 
     &__link {
         display: inline;
-        padding-right: 101px;
+        margin-right: 101px;
         font-size: 16px;
         color: #fff;
 
         &:hover{
             color: $color3;
             transition: 0.2s;
+        }
+
+        a{
+            &:hover{
+                color: $color3;
+                transition: 0.2s;
+            }
         }
     }
 
