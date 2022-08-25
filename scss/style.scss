@@ -14,19 +14,19 @@ $border5: 1px solid pink;
 
 body{
     font-family: 'Montserrat';
-    margin: 0 auto;
+    margin-left: 13.5%;
     padding: 0 20px;
     // height: 3547px;
-    width: 1440px;
+    max-width: 1440px;
     left: 1516px;
     top: -585px;
-    border-radius: 0px;    
+    border-radius: 0px;
 }
 
 
 html, body {
     width: 1440px;
-    // height: 3547px;
+    // // height: 3547px;
     background-color: #141414;
 }
 
@@ -36,13 +36,13 @@ body.lock{
 
 /* Шапка сайта */
 .header {
-
     .container{
         background-image: url('/assets/header/bg.png');
+        width: 100%;
         position: absolute;
         width: 1440px;
         height: 952px;
-        left: 0px;
+        left: 13.5%;
         top: 0px;
         color: $color1;
     }
@@ -126,8 +126,8 @@ body.lock{
 
     &__hamburger {
         border: 1px soild red;
-        width: 52px;
-        height: 52px;
+        width: 42px;
+        height: 42px;
         display: block;
         background: transparent;
         border: transparent;
@@ -138,7 +138,7 @@ body.lock{
         span{
             display: block;
             width: 100%;
-            height: 5.5px;
+            height: 4.5px;
             background: $color3;
             position: relative;
             box-shadow: 0 2px 10px #00000030;
@@ -221,7 +221,7 @@ body.lock{
     }
 
     .header__hamburger{
-        transform: translate(-190px,-90px);
+        transform: translate(-45px,-95px);
         transition: 0.8s;
 
         span:nth-child(1){
@@ -319,7 +319,7 @@ body.lock{
     }
 
     100%{
-        bottom: 19.5px;
+        bottom: 20.9px;
         transform: rotate(-45deg);
     }
 }
