@@ -209,146 +209,6 @@ body.lock{
     }
 }
 
-
-/* Активая меню и анимации при нажатии */
-.active{
-    .header__menu1{
-        right: 0;
-    }
-
-    .header__hamburger{
-        transform: translate(-45px,-95px);
-        transition: 0.8s;
-
-        span:nth-child(1){
-            animation: ease 0.5s top forwards;
-        }
-
-        span:nth-child(2){
-            animation: ease 0.5s middle forwards;
-        }
-
-        span:nth-child(3){
-            animation: ease 0.5s bottom forwards;
-        }
-    }
-}
-
-/* Анимации burger-menu*/
-
-@keyframes top{
-
-    0%{
-        top: 0;
-        transform: rotate(0);
-    }
-
-    50%{
-        top: 10px;
-        transform: rotate(0);
-    }
-
-    100%{
-        top: 10px;
-        transform: rotate(45deg);
-    }
-}
-
-@keyframes top-back{
-
-    0%{
-        top: 10px;
-        transform: rotate(45deg);
-    }
-
-    50%{
-        top: 10px;
-        transform: rotate(0);
-    }
-
-    100%{
-        top: 0;
-        transform: rotate(0);
-    }
-}
-
-@keyframes middle{
-
-    0%{
-        transform: scale(1);
-    }
-
-    50%{
-        transform: scale(0);
-    }
-
-    100%{
-        transform: scale(0);
-    }
-}
-
-@keyframes middle-back{
-
-    0%{
-        transform: scale(0);
-    }
-
-    50%{
-        transform: scale(0);
-    }
-
-    100%{
-        transform: scale(1);
-    }
-}
-
-@keyframes bottom{
-
-    0%{
-        bottom: 0;
-        transform: rotate(0);
-    }
-
-    50%{
-        bottom: 10px;
-        transform: rotate(0);
-    }
-
-    100%{
-        bottom: 20.9px;
-        transform: rotate(-45deg);
-    }
-}
-
-@keyframes bottom-back{
-
-    0%{
-        bottom: 10px;
-        transform: rotate(-45deg);
-    }
-
-    50%{
-        bottom: 10px;
-        transform: rotate(0);
-    }
-
-    100%{
-        bottom: 0px;
-        transform: rotate(0);
-    }
-}
-
-.container {
-}
-.list {
-
-    padding-top: 30px;
-
-    a{
-        color: $color1;
-    }
-}
-
 /* Основная часть сайта */
 .conten-main {
     margin-top: 1096px;
@@ -618,54 +478,339 @@ body.lock{
 .container {
 }
 
+.container {
+}
+.list {
+
+    padding-top: 30px;
+
+    a{
+        color: $color1;
+    }
+}
 /* Карта напитков */
 
 .map {
 
     &__body {
-        border: $border1;
         position: absolute;
         width: 1216px;
         height: 1024px;
-        left: 14.5%;
+        left: 18.5%;
         top: 0px;
     }
 
     &__title {
+        width: 1216px;
+        height: 140px;
+        background: url('/assets/menu/bg.png');
+        h1{
+            padding-top: 40px;
+            font-size: 48px;
+            text-align: center;
+            color: #e4e4e4;
+        }
     }
 
     &__menu {
+        position: absolute;
+        width: 1214px;
+        height: 880px;
+        left: 0px;
+        top: 100px;        
+        background: $color1;  
     }
 
     &__menu-body {
+        display: flex;
     }
 
-    &__menu-body-list1 {
+    &__menu-body-left{
+        
     }
+
+    &__menu-body-right{
+        
+    }
+
+    
 
     &__drinks {
     }
 
-    &__drinksname {
+    &__drinktitle{
+        font-size: 20px;
+        color: #1d1e25;
+        font-weight: 600;
+        line-height: 24px;
+        text-align: center;
+        margin-bottom: 31px;
+        padding: 13px 65px;
+        border-top: 2px solid $color3;
+        border-right: 2px solid $color3;
+        border-bottom: 2px solid $color3;
     }
 
-    &__drinksprice {
+    &__drinksname {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        padding-bottom: 8px;
+        color: #1D1E25;
+    }
+
+    .drinksprice {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 24px;
+        padding-bottom: 8px;
+        color: #1D1E25;
+        text-align: right;
+    }
+
+    &__drinksprice1{
+        position: relative;
+        top: -96px;
+        left: 0;
+    }
+
+    &__drinksprice2{
+        position: relative;
+        top: -208px;
+        left: 0;
+
+        p:nth-child(2) {
+            color: red;
+        }
+    }
+
+    &__drinksprice3{
+        position: relative;
+        top: 0;
+        left: 0;
+        
+    }
+
+    &__drinksprice4{
+        position: relative;
+        top: 0;
+        left: 0;
+        
+    }
+
+    &__drinksprice5{
+        position: relative;
+        top: 0;
+        left: 0;
+        
+    }
+
+    &__drinksprice6{
+        position: relative;
+        top: 0;
+        left: 0;
+        
+    }
+
+    .drinksalt{
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        color: #1D1E25;
+        padding-bottom: 8px;
+        background: url('/assets/menu/Line.png') left no-repeat;
+        padding-left:38px;
+        padding-bottom: 0;
+    }
+
+    &__drinksalt1{
+        
+    }
+
+    &__drinksalt2{
+        
+    }
+
+    &__menu-body-list1 {
+        position: absolute;
+        width: 416px;
+        height: 178px;
+        left: 104px;
+        top: 24px;
     }
 
     &__menu-body-list2 {
+        position: absolute;
+        width: 416px;
+        height: 290px;
+        left: 104px;
+        top: 256px;
     }
 
     &__menu-body-list3 {
+        position: absolute;
+        width: 416px;
+        height: 210px;
+        left: 104px;
+        top: 599px;
+        
     }
 
     &__menu-body-list4 {
+        position: absolute;
+        width: 416px;
+        height: 322px;
+        left: 708px;
+        top: 24px;
     }
 
     &__menu-body-list5 {
+        position: absolute;
+        width: 416px;
+        height: 242px;
+        left: 708px;
+        top: 370px;
     }
 
     &__menu-body-list6 {
+        position: absolute;
+        width: 416px;
+        height: 178px;
+        left: 708px;
+        top: 636px;
     }
 }
 .container {
 }
+
+
+/* Активая меню и анимации при нажатии */
+.active{
+    .header__menu1{
+        right: 0;
+    }
+
+    .header__hamburger{
+        transform: translate(-45px,-95px);
+        transition: 0.8s;
+
+        span:nth-child(1){
+            animation: ease 0.5s top forwards;
+        }
+
+        span:nth-child(2){
+            animation: ease 0.5s middle forwards;
+        }
+
+        span:nth-child(3){
+            animation: ease 0.5s bottom forwards;
+        }
+    }
+}
+
+/* Анимации burger-menu*/
+
+@keyframes top{
+
+    0%{
+        top: 0;
+        transform: rotate(0);
+    }
+
+    50%{
+        top: 10px;
+        transform: rotate(0);
+    }
+
+    100%{
+        top: 10px;
+        transform: rotate(45deg);
+    }
+}
+
+@keyframes top-back{
+
+    0%{
+        top: 10px;
+        transform: rotate(45deg);
+    }
+
+    50%{
+        top: 10px;
+        transform: rotate(0);
+    }
+
+    100%{
+        top: 0;
+        transform: rotate(0);
+    }
+}
+
+@keyframes middle{
+
+    0%{
+        transform: scale(1);
+    }
+
+    50%{
+        transform: scale(0);
+    }
+
+    100%{
+        transform: scale(0);
+    }
+}
+
+@keyframes middle-back{
+
+    0%{
+        transform: scale(0);
+    }
+
+    50%{
+        transform: scale(0);
+    }
+
+    100%{
+        transform: scale(1);
+    }
+}
+
+@keyframes bottom{
+
+    0%{
+        bottom: 0;
+        transform: rotate(0);
+    }
+
+    50%{
+        bottom: 10px;
+        transform: rotate(0);
+    }
+
+    100%{
+        bottom: 20.9px;
+        transform: rotate(-45deg);
+    }
+}
+
+@keyframes bottom-back{
+
+    0%{
+        bottom: 10px;
+        transform: rotate(-45deg);
+    }
+
+    50%{
+        bottom: 10px;
+        transform: rotate(0);
+    }
+
+    100%{
+        bottom: 0px;
+        transform: rotate(0);
+    }
+}
+
+
+

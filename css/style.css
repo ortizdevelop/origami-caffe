@@ -226,191 +226,6 @@ body.lock {
   transform: translate(70px, -50px);
 }
 
-/* Активая меню и анимации при нажатии */
-.active .header__menu1 {
-  right: 0;
-}
-.active .header__hamburger {
-  transform: translate(-45px, -95px);
-  transition: 0.8s;
-}
-.active .header__hamburger span:nth-child(1) {
-  -webkit-animation: ease 0.5s top forwards;
-          animation: ease 0.5s top forwards;
-}
-.active .header__hamburger span:nth-child(2) {
-  -webkit-animation: ease 0.5s middle forwards;
-          animation: ease 0.5s middle forwards;
-}
-.active .header__hamburger span:nth-child(3) {
-  -webkit-animation: ease 0.5s bottom forwards;
-          animation: ease 0.5s bottom forwards;
-}
-
-/* Анимации burger-menu*/
-@-webkit-keyframes top {
-  0% {
-    top: 0;
-    transform: rotate(0);
-  }
-  50% {
-    top: 10px;
-    transform: rotate(0);
-  }
-  100% {
-    top: 10px;
-    transform: rotate(45deg);
-  }
-}
-@keyframes top {
-  0% {
-    top: 0;
-    transform: rotate(0);
-  }
-  50% {
-    top: 10px;
-    transform: rotate(0);
-  }
-  100% {
-    top: 10px;
-    transform: rotate(45deg);
-  }
-}
-@-webkit-keyframes top-back {
-  0% {
-    top: 10px;
-    transform: rotate(45deg);
-  }
-  50% {
-    top: 10px;
-    transform: rotate(0);
-  }
-  100% {
-    top: 0;
-    transform: rotate(0);
-  }
-}
-@keyframes top-back {
-  0% {
-    top: 10px;
-    transform: rotate(45deg);
-  }
-  50% {
-    top: 10px;
-    transform: rotate(0);
-  }
-  100% {
-    top: 0;
-    transform: rotate(0);
-  }
-}
-@-webkit-keyframes middle {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(0);
-  }
-  100% {
-    transform: scale(0);
-  }
-}
-@keyframes middle {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(0);
-  }
-  100% {
-    transform: scale(0);
-  }
-}
-@-webkit-keyframes middle-back {
-  0% {
-    transform: scale(0);
-  }
-  50% {
-    transform: scale(0);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-@keyframes middle-back {
-  0% {
-    transform: scale(0);
-  }
-  50% {
-    transform: scale(0);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-@-webkit-keyframes bottom {
-  0% {
-    bottom: 0;
-    transform: rotate(0);
-  }
-  50% {
-    bottom: 10px;
-    transform: rotate(0);
-  }
-  100% {
-    bottom: 20.9px;
-    transform: rotate(-45deg);
-  }
-}
-@keyframes bottom {
-  0% {
-    bottom: 0;
-    transform: rotate(0);
-  }
-  50% {
-    bottom: 10px;
-    transform: rotate(0);
-  }
-  100% {
-    bottom: 20.9px;
-    transform: rotate(-45deg);
-  }
-}
-@-webkit-keyframes bottom-back {
-  0% {
-    bottom: 10px;
-    transform: rotate(-45deg);
-  }
-  50% {
-    bottom: 10px;
-    transform: rotate(0);
-  }
-  100% {
-    bottom: 0px;
-    transform: rotate(0);
-  }
-}
-@keyframes bottom-back {
-  0% {
-    bottom: 10px;
-    transform: rotate(-45deg);
-  }
-  50% {
-    bottom: 10px;
-    transform: rotate(0);
-  }
-  100% {
-    bottom: 0px;
-    transform: rotate(0);
-  }
-}
-.list {
-  padding-top: 30px;
-}
-.list a {
-  color: #E4E4E4;
-}
-
 /* Основная часть сайта */
 .conten-main {
   margin-top: 1096px;
@@ -610,12 +425,331 @@ body.lock {
   color: #fff;
 }
 
+.list {
+  padding-top: 30px;
+}
+.list a {
+  color: #E4E4E4;
+}
+
 /* Карта напитков */
 .map__body {
-  border: 1px solid red;
   position: absolute;
   width: 1216px;
   height: 1024px;
-  left: 14.5%;
+  left: 18.5%;
   top: 0px;
+}
+.map__title {
+  width: 1216px;
+  height: 140px;
+  background: url("/assets/menu/bg.png");
+}
+.map__title h1 {
+  padding-top: 40px;
+  font-size: 48px;
+  text-align: center;
+  color: #e4e4e4;
+}
+.map__menu {
+  position: absolute;
+  width: 1214px;
+  height: 880px;
+  left: 0px;
+  top: 100px;
+  background: #E4E4E4;
+}
+.map__menu-body {
+  display: flex;
+}
+.map__drinktitle {
+  font-size: 20px;
+  color: #1d1e25;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: center;
+  margin-bottom: 31px;
+  padding: 13px 65px;
+  border-top: 2px solid #FF9466;
+  border-right: 2px solid #FF9466;
+  border-bottom: 2px solid #FF9466;
+}
+.map__drinksname {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  padding-bottom: 8px;
+  color: #1D1E25;
+}
+.map .drinksprice {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  padding-bottom: 8px;
+  color: #1D1E25;
+  text-align: right;
+}
+.map__drinksprice1 {
+  position: relative;
+  top: -96px;
+  left: 0;
+}
+.map__drinksprice2 {
+  position: relative;
+  top: -208px;
+  left: 0;
+}
+.map__drinksprice2 p:nth-child(2) {
+  color: red;
+}
+.map__drinksprice3 {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.map__drinksprice4 {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.map__drinksprice5 {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.map__drinksprice6 {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.map .drinksalt {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #1D1E25;
+  padding-bottom: 8px;
+  background: url("/assets/menu/Line.png") left no-repeat;
+  padding-left: 38px;
+  padding-bottom: 0;
+}
+.map__menu-body-list1 {
+  position: absolute;
+  width: 416px;
+  height: 178px;
+  left: 104px;
+  top: 24px;
+}
+.map__menu-body-list2 {
+  position: absolute;
+  width: 416px;
+  height: 290px;
+  left: 104px;
+  top: 256px;
+}
+.map__menu-body-list3 {
+  position: absolute;
+  width: 416px;
+  height: 210px;
+  left: 104px;
+  top: 599px;
+}
+.map__menu-body-list4 {
+  position: absolute;
+  width: 416px;
+  height: 322px;
+  left: 708px;
+  top: 24px;
+}
+.map__menu-body-list5 {
+  position: absolute;
+  width: 416px;
+  height: 242px;
+  left: 708px;
+  top: 370px;
+}
+.map__menu-body-list6 {
+  position: absolute;
+  width: 416px;
+  height: 178px;
+  left: 708px;
+  top: 636px;
+}
+
+/* Активая меню и анимации при нажатии */
+.active .header__menu1 {
+  right: 0;
+}
+.active .header__hamburger {
+  transform: translate(-45px, -95px);
+  transition: 0.8s;
+}
+.active .header__hamburger span:nth-child(1) {
+  -webkit-animation: ease 0.5s top forwards;
+          animation: ease 0.5s top forwards;
+}
+.active .header__hamburger span:nth-child(2) {
+  -webkit-animation: ease 0.5s middle forwards;
+          animation: ease 0.5s middle forwards;
+}
+.active .header__hamburger span:nth-child(3) {
+  -webkit-animation: ease 0.5s bottom forwards;
+          animation: ease 0.5s bottom forwards;
+}
+
+/* Анимации burger-menu*/
+@-webkit-keyframes top {
+  0% {
+    top: 0;
+    transform: rotate(0);
+  }
+  50% {
+    top: 10px;
+    transform: rotate(0);
+  }
+  100% {
+    top: 10px;
+    transform: rotate(45deg);
+  }
+}
+@keyframes top {
+  0% {
+    top: 0;
+    transform: rotate(0);
+  }
+  50% {
+    top: 10px;
+    transform: rotate(0);
+  }
+  100% {
+    top: 10px;
+    transform: rotate(45deg);
+  }
+}
+@-webkit-keyframes top-back {
+  0% {
+    top: 10px;
+    transform: rotate(45deg);
+  }
+  50% {
+    top: 10px;
+    transform: rotate(0);
+  }
+  100% {
+    top: 0;
+    transform: rotate(0);
+  }
+}
+@keyframes top-back {
+  0% {
+    top: 10px;
+    transform: rotate(45deg);
+  }
+  50% {
+    top: 10px;
+    transform: rotate(0);
+  }
+  100% {
+    top: 0;
+    transform: rotate(0);
+  }
+}
+@-webkit-keyframes middle {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+@keyframes middle {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+@-webkit-keyframes middle-back {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes middle-back {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@-webkit-keyframes bottom {
+  0% {
+    bottom: 0;
+    transform: rotate(0);
+  }
+  50% {
+    bottom: 10px;
+    transform: rotate(0);
+  }
+  100% {
+    bottom: 20.9px;
+    transform: rotate(-45deg);
+  }
+}
+@keyframes bottom {
+  0% {
+    bottom: 0;
+    transform: rotate(0);
+  }
+  50% {
+    bottom: 10px;
+    transform: rotate(0);
+  }
+  100% {
+    bottom: 20.9px;
+    transform: rotate(-45deg);
+  }
+}
+@-webkit-keyframes bottom-back {
+  0% {
+    bottom: 10px;
+    transform: rotate(-45deg);
+  }
+  50% {
+    bottom: 10px;
+    transform: rotate(0);
+  }
+  100% {
+    bottom: 0px;
+    transform: rotate(0);
+  }
+}
+@keyframes bottom-back {
+  0% {
+    bottom: 10px;
+    transform: rotate(-45deg);
+  }
+  50% {
+    bottom: 10px;
+    transform: rotate(0);
+  }
+  100% {
+    bottom: 0px;
+    transform: rotate(0);
+  }
 }
