@@ -12,23 +12,19 @@ $border3: 1px solid green;
 $border4: 1px solid yellow;
 $border5: 1px solid pink;
 
+
+/* Основные параметры сайта */
 body{
     font-family: 'Montserrat';
     margin-left: 13.5%;
     padding: 0 20px;
-    // height: 3547px;
+    background-color: #141414;
     max-width: 1440px;
     left: 1516px;
     top: -585px;
     border-radius: 0px;
 }
 
-
-html, body {
-    width: 1440px;
-    // // height: 3547px;
-    background-color: #141414;
-}
 
 body.lock{
     overflow: hidden;
@@ -622,4 +618,54 @@ body.lock{
 .container {
 }
 
+/* Карта напитков */
 
+.map {
+
+    &__body {
+        border: $border1;
+        position: absolute;
+        width: 1216px;
+        height: 1024px;
+        left: 14.5%;
+        top: 0px;
+    }
+
+    &__title {
+    }
+
+    &__menu {
+    }
+
+    &__menu-body {
+    }
+
+    &__menu-body-list1 {
+    }
+
+    &__drinks {
+    }
+
+    &__drinksname {
+    }
+
+    &__drinksprice {
+    }
+
+    &__menu-body-list2 {
+    }
+
+    &__menu-body-list3 {
+    }
+
+    &__menu-body-list4 {
+    }
+
+    &__menu-body-list5 {
+    }
+
+    &__menu-body-list6 {
+    }
+}
+.container {
+}

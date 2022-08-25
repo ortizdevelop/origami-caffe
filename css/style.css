@@ -72,19 +72,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*--------------------*/
+/* Основные параметры сайта */
 body {
   font-family: "Montserrat";
   margin-left: 13.5%;
   padding: 0 20px;
+  background-color: #141414;
   max-width: 1440px;
   left: 1516px;
   top: -585px;
   border-radius: 0px;
-}
-
-html, body {
-  width: 1440px;
-  background-color: #141414;
 }
 
 body.lock {
@@ -611,4 +608,14 @@ body.lock {
   font-size: 16px;
   font-weight: 300;
   color: #fff;
+}
+
+/* Карта напитков */
+.map__body {
+  border: 1px solid red;
+  position: absolute;
+  width: 1216px;
+  height: 1024px;
+  left: 14.5%;
+  top: 0px;
 }
