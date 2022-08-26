@@ -481,46 +481,61 @@ body.lock {
   padding-bottom: 8px;
   color: #1D1E25;
 }
+.map .drinksname4 {
+  padding: 0;
+}
 .map .drinksprice {
   font-weight: 600;
   font-size: 20px;
   line-height: 24px;
-  padding-bottom: 8px;
-  color: #1D1E25;
   text-align: right;
 }
 .map__drinksprice1 {
   position: relative;
   top: -96px;
   left: 0;
+  padding-bottom: 8px;
 }
 .map__drinksprice2 {
   position: relative;
-  top: -208px;
+  top: -202px;
   left: 0;
 }
-.map__drinksprice2 p:nth-child(2) {
-  color: red;
+.map__drinksprice2:nth-child(9) {
+  padding-bottom: 36px;
+}
+.map__drinksprice2:nth-child(12) {
+  padding-bottom: 8px;
+}
+.map__drinksprice2:nth-child(13) {
+  padding-bottom: 8px;
 }
 .map__drinksprice3 {
   position: relative;
-  top: 0;
+  top: -130px;
   left: 0;
+  padding-bottom: 8.5px;
 }
 .map__drinksprice4 {
   position: relative;
-  top: 0;
+  top: -229px;
   left: 0;
+  padding-bottom: 5px;
+}
+.map__drinksprice4:nth-child(14) {
+  padding-top: 0px;
 }
 .map__drinksprice5 {
   position: relative;
-  top: 0;
+  top: -160px;
   left: 0;
+  padding-bottom: 8px;
 }
 .map__drinksprice6 {
   position: relative;
-  top: 0;
+  top: -100px;
   left: 0;
+  padding-bottom: 8px;
 }
 .map .drinksalt {
   font-weight: 500;
@@ -531,6 +546,18 @@ body.lock {
   background: url("/assets/menu/Line.png") left no-repeat;
   padding-left: 38px;
   padding-bottom: 0;
+}
+.map__drinksalt1:nth-child(6) {
+  padding-bottom: 8px;
+}
+.map__drinksalt2:nth-child(6) {
+  padding-bottom: 4px;
+}
+.map__drinksalt2:nth-child(7) {
+  padding-bottom: 4px;
+}
+.map__drinksalt2:nth-child(8) {
+  padding-bottom: 4px;
 }
 .map__menu-body-list1 {
   position: absolute;

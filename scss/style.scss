@@ -557,12 +557,14 @@ body.lock{
         color: #1D1E25;
     }
 
+    .drinksname4{
+        padding: 0;
+    }
+
     .drinksprice {
         font-weight: 600;
         font-size: 20px;
         line-height: 24px;
-        padding-bottom: 8px;
-        color: #1D1E25;
         text-align: right;
     }
 
@@ -570,44 +572,57 @@ body.lock{
         position: relative;
         top: -96px;
         left: 0;
+        padding-bottom: 8px;
     }
 
     &__drinksprice2{
         position: relative;
-        top: -208px;
+        top: -202px;
         left: 0;
 
-        p:nth-child(2) {
-            color: red;
+        &:nth-child(9){
+            padding-bottom: 36px;
+        }
+
+        &:nth-child(12){
+            padding-bottom: 8px;
+        }
+
+        &:nth-child(13){
+            padding-bottom: 8px;
         }
     }
 
     &__drinksprice3{
         position: relative;
-        top: 0;
+        top: -130px;
         left: 0;
-        
+        padding-bottom: 8.5px;
     }
 
     &__drinksprice4{
         position: relative;
-        top: 0;
+        top: -229px;
         left: 0;
-        
+        padding-bottom: 5px;
+
+        &:nth-child(14){
+            padding-top: 0px;
+        }
     }
 
     &__drinksprice5{
         position: relative;
-        top: 0;
+        top: -160px;
         left: 0;
-        
+        padding-bottom: 8px;
     }
 
     &__drinksprice6{
         position: relative;
-        top: 0;
+        top: -100px;
         left: 0;
-        
+        padding-bottom: 8px;    
     }
 
     .drinksalt{
@@ -622,11 +637,24 @@ body.lock{
     }
 
     &__drinksalt1{
-
+        &:nth-child(6){
+            padding-bottom: 8px;
+        }
     }
 
     &__drinksalt2{
 
+        &:nth-child(6){
+            padding-bottom: 4px;
+        }
+
+        &:nth-child(7){
+            padding-bottom: 4px;
+        }
+
+        &:nth-child(8){
+            padding-bottom: 4px;
+        }
     }
 
     &__menu-body-list1 {
