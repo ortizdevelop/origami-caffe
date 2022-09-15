@@ -83,6 +83,20 @@ body.lock{
             border-top: 2px solid #ff9466;
             border-right: 2px solid #ff9466;
             border-bottom: 2px solid #ff9466;
+
+            &:hover{
+                a{
+                    transition: 0.4s;
+                    font-weight: 500;
+                }
+            }
+
+            &:active{
+                a{
+                    transition: 0.4s;
+                    color: $color3;
+                }
+            }
         }
     }
 
