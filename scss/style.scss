@@ -579,7 +579,7 @@ body.lock{
         font-size: 20px;
         line-height: 24px;
         padding-bottom: 8px;
-        color: #1D1E25;
+        color: $color2;
     }
 
     .drinksname4{
@@ -593,6 +593,10 @@ body.lock{
         font-size: 20px;
         line-height: 24px;
         text-align: right;
+
+        &:hover{
+            color: $color3;
+        }
     }
 
     &__drinksprice1{

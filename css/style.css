@@ -509,6 +509,9 @@ body.lock {
   line-height: 24px;
   text-align: right;
 }
+.map .drinksprice:hover {
+  color: #FF9466;
+}
 .map__drinksprice1 {
   position: relative;
   top: -96px;
